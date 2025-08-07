@@ -287,7 +287,7 @@
     async function captureElement(element) {
         return new Promise((resolve) => {
             try {
-                html2canvas(element, {
+                window.html2canvas(element, {
                     useCORS: true,
                     scale: 2,
                     logging: false
