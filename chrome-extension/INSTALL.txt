@@ -1,42 +1,97 @@
-🚀 SPARK PPT DOWNLOADER - INSTALLATION GUIDE
-==========================================
+🚀 SPARK PPT DOWNLOADER - STEP-BY-STEP INSTALLATION GUIDE
+=========================================================
 
-📦 QUICK INSTALLATION:
+⚠️ COMMON ISSUE FIX: If you get "Manifest file is missing" error, follow these exact steps:
 
-1. Open Chrome browser
-2. Go to: chrome://extensions/
-3. Enable "Developer mode" (toggle in top-right corner)
-4. Click "Load unpacked" button
-5. Select the "chrome-extension" folder
-6. The extension will be installed and ready to use!
+📁 STEP 1: PREPARE THE FOLDER
+1. Download/extract the extension files to your computer
+2. Make sure you have a folder named "chrome-extension" (or "Spark-PPT-Downloader")
+3. Open the folder - you should see these files:
+   ✅ manifest.json
+   ✅ popup.html
+   ✅ popup.js
+   ✅ popup.css
+   ✅ content.js
+   ✅ content.css
+   ✅ background.js
+   ✅ icons/ folder (with icon files)
+   ✅ libs/ folder (with library files)
 
-🎯 HOW TO USE:
+🔧 STEP 2: INSTALL IN CHROME
+1. Open Google Chrome browser
+2. Type in address bar: chrome://extensions/
+3. Press Enter
+4. In the top-right corner, turn ON "Developer mode" (toggle switch)
+5. You'll see new buttons appear: "Load unpacked", "Pack extension", "Update"
 
-Method 1 - Automatic (Recommended):
-• Visit any Slideshare or Scribd presentation page
-• Look for the floating "Download" button (bottom-right)
-• Click it and choose PDF or PPT format
+📦 STEP 3: LOAD THE EXTENSION
+1. Click "Load unpacked" button
+2. Navigate to and SELECT THE MAIN FOLDER containing manifest.json
+   ⚠️ IMPORTANT: Select the folder itself, not individual files!
+   ⚠️ The folder you select must contain manifest.json directly inside it
+3. Click "Select Folder" (Windows) or "Open" (Mac)
 
-Method 2 - Manual:
-• Click the Spark PPT icon in Chrome toolbar
-• Paste the presentation URL
+✅ STEP 4: VERIFY INSTALLATION
+After successful installation, you should see:
+• "Spark PPT Downloader" extension card with icon
+• Extension status: ON (blue toggle)
+• No error messages
+
+🎯 STEP 5: START USING
+Method 1 - Auto Detection:
+• Visit slideshare.net or scribd.com
+• Go to any presentation page
+• Look for floating "Download" button (bottom-right)
+• Click and select PDF or PPT
+
+Method 2 - Manual URL:
+• Click Spark PPT icon in Chrome toolbar
+• Paste presentation URL
 • Select format and click "Download Now"
 
-✅ SUPPORTED SITES:
-• Slideshare.net
-• Scribd.com
+🚨 TROUBLESHOOTING COMMON ERRORS:
 
-⚠️  IMPORTANT NOTES:
-• Some premium/protected content may not be downloadable
-• The extension captures what's visible on screen
-• For best results, ensure slides are fully loaded
-• Respect copyright laws and platform terms of service
+❌ "Manifest file is missing or unreadable"
+✅ Fix: Make sure you're selecting the correct folder that contains manifest.json
 
-🛠️ TROUBLESHOOTING:
-• If download fails, refresh the page and try again
-• Make sure the presentation is publicly accessible
-• Check that extension is enabled in chrome://extensions/
+❌ "Failed to load extension"  
+✅ Fix: Check that all files are present and not corrupted
+
+❌ "Extension doesn't appear in toolbar"
+✅ Fix: Look for puzzle piece icon in toolbar, click it and pin Spark PPT
+
+❌ "Download button doesn't appear"
+✅ Fix: Refresh the presentation page and wait a few seconds
+
+❌ "Download fails"
+✅ Fix: Make sure presentation is publicly accessible
+
+📝 FILE STRUCTURE CHECK:
+Your folder should look like this:
+chrome-extension/
+├── manifest.json ← MUST BE HERE!
+├── popup.html
+├── popup.js
+├── popup.css  
+├── content.js
+├── content.css
+├── background.js
+├── icons/
+│   ├── icon16.png
+│   ├── icon32.png  
+│   ├── icon48.png
+│   └── icon128.png
+└── libs/
+    ├── html2canvas.min.js
+    ├── jspdf.min.js
+    └── pptxgen.min.js
+
+🔄 NEED TO UPDATE?
+1. Go to chrome://extensions/
+2. Find "Spark PPT Downloader"  
+3. Click the refresh/reload icon
+4. Changes will take effect immediately
 
 👨‍💻 BUILT BY: Owais Iqbal x Deep Thinker
 
-Enjoy downloading presentations! 🎉
+Need help? Check that your folder structure matches exactly as shown above! 🎉
