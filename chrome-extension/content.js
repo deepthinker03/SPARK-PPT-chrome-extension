@@ -260,7 +260,7 @@
         updateProgress(60);
         
         // Capture screenshot
-        const canvas = await html2canvas(document.body, {
+        const canvas = await window.html2canvas(document.body, {
             height: height,
             width: window.innerWidth,
             useCORS: true,
