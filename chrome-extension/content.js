@@ -317,7 +317,7 @@
     }
     
     async function generatePPT(slides, title) {
-        const pres = new PptxGenJS();
+        const pres = new window.PptxGenJS();
         
         for (let slide of slides) {
             const pptSlide = pres.addSlide();
