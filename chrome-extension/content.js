@@ -299,6 +299,7 @@
     }
     
     async function generatePDF(slides, title) {
+        const { jsPDF } = window.jspdf;
         const pdf = new jsPDF({
             orientation: slides[0].width > slides[0].height ? 'landscape' : 'portrait',
             unit: 'px',
