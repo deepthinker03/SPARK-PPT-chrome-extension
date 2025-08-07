@@ -1,0 +1,42 @@
+🚀 SPARK PPT DOWNLOADER - INSTALLATION GUIDE
+==========================================
+
+📦 QUICK INSTALLATION:
+
+1. Open Chrome browser
+2. Go to: chrome://extensions/
+3. Enable "Developer mode" (toggle in top-right corner)
+4. Click "Load unpacked" button
+5. Select the "chrome-extension" folder
+6. The extension will be installed and ready to use!
+
+🎯 HOW TO USE:
+
+Method 1 - Automatic (Recommended):
+• Visit any Slideshare or Scribd presentation page
+• Look for the floating "Download" button (bottom-right)
+• Click it and choose PDF or PPT format
+
+Method 2 - Manual:
+• Click the Spark PPT icon in Chrome toolbar
+• Paste the presentation URL
+• Select format and click "Download Now"
+
+✅ SUPPORTED SITES:
+• Slideshare.net
+• Scribd.com
+
+⚠️  IMPORTANT NOTES:
+• Some premium/protected content may not be downloadable
+• The extension captures what's visible on screen
+• For best results, ensure slides are fully loaded
+• Respect copyright laws and platform terms of service
+
+🛠️ TROUBLESHOOTING:
+• If download fails, refresh the page and try again
+• Make sure the presentation is publicly accessible
+• Check that extension is enabled in chrome://extensions/
+
+👨‍💻 BUILT BY: Owais Iqbal x Deep Thinker
+
+Enjoy downloading presentations! 🎉
