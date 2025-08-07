@@ -5,9 +5,9 @@
 
 📁 STEP 1: PREPARE THE FOLDER
 1. Download/extract the extension files to your computer
-2. Make sure you have a folder named "chrome-extension" (or "Spark-PPT-Downloader")
-3. Open the folder - you should see these files:
-   ✅ manifest.json
+2. Make sure you have the main project folder (contains all extension files in root)
+3. Open the folder - you should see these files DIRECTLY in the main folder:
+   ✅ manifest.json (MUST BE IN ROOT FOLDER)
    ✅ popup.html
    ✅ popup.js
    ✅ popup.css
@@ -16,6 +16,7 @@
    ✅ background.js
    ✅ icons/ folder (with icon files)
    ✅ libs/ folder (with library files)
+   ✅ utils/ folder (with utility files)
 
 🔧 STEP 2: INSTALL IN CHROME
 1. Open Google Chrome browser
@@ -26,9 +27,9 @@
 
 📦 STEP 3: LOAD THE EXTENSION
 1. Click "Load unpacked" button
-2. Navigate to and SELECT THE MAIN FOLDER containing manifest.json
-   ⚠️ IMPORTANT: Select the folder itself, not individual files!
-   ⚠️ The folder you select must contain manifest.json directly inside it
+2. Navigate to and SELECT THE MAIN PROJECT FOLDER containing manifest.json
+   ⚠️ IMPORTANT: Select the root folder that contains manifest.json directly!
+   ⚠️ DO NOT select any subfolders - select the main project directory
 3. Click "Select Folder" (Windows) or "Open" (Mac)
 
 ✅ STEP 4: VERIFY INSTALLATION
@@ -52,10 +53,10 @@ Method 2 - Manual URL:
 🚨 TROUBLESHOOTING COMMON ERRORS:
 
 ❌ "Manifest file is missing or unreadable"
-✅ Fix: Make sure you're selecting the correct folder that contains manifest.json
+✅ Fix: Make sure you're selecting the ROOT FOLDER that contains manifest.json directly
 
 ❌ "Failed to load extension"  
-✅ Fix: Check that all files are present and not corrupted
+✅ Fix: Check that all files are present and not corrupted in the root directory
 
 ❌ "Extension doesn't appear in toolbar"
 ✅ Fix: Look for puzzle piece icon in toolbar, click it and pin Spark PPT
@@ -67,24 +68,32 @@ Method 2 - Manual URL:
 ✅ Fix: Make sure presentation is publicly accessible
 
 📝 FILE STRUCTURE CHECK:
-Your folder should look like this:
-chrome-extension/
-├── manifest.json ← MUST BE HERE!
+Your ROOT folder should look like this:
+your-project-folder/                    ← SELECT THIS FOLDER IN CHROME
+├── manifest.json                       ← MUST BE HERE AT ROOT LEVEL!
 ├── popup.html
 ├── popup.js
 ├── popup.css  
 ├── content.js
 ├── content.css
 ├── background.js
+├── INSTALL.txt                         ← This file you're reading
+├── README.md
+├── CHECKLIST.md
+├── demo.html
 ├── icons/
 │   ├── icon16.png
 │   ├── icon32.png  
 │   ├── icon48.png
-│   └── icon128.png
-└── libs/
-    ├── html2canvas.min.js
-    ├── jspdf.min.js
-    └── pptxgen.min.js
+│   ├── icon128.png
+│   └── icon.svg
+├── libs/
+│   ├── html2canvas.min.js
+│   ├── jspdf.min.js
+│   └── pptxgen.min.js
+└── utils/
+    ├── slideshare.js
+    └── scribd.js
 
 🔄 NEED TO UPDATE?
 1. Go to chrome://extensions/
@@ -94,4 +103,4 @@ chrome-extension/
 
 👨‍💻 BUILT BY: Owais Iqbal x Deep Thinker
 
-Need help? Check that your folder structure matches exactly as shown above! 🎉
+✨ IMPORTANT: All extension files are now in the ROOT folder for easy access! 🎉
