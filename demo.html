@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spark PPT Downloader - Demo</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .demo-container {
+            display: flex;
+            gap: 40px;
+            align-items: flex-start;
+        }
+        
+        .popup-demo {
+            position: relative;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 16px;
+            padding: 8px;
+            box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+        }
+        
+        .info-panel {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            border-radius: 16px;
+            padding: 30px;
+            max-width: 400px;
+            box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+        }
+        
+        .info-panel h1 {
+            color: #4f46e5;
+            margin-bottom: 20px;
+        }
+        
+        .info-panel h2 {
+            color: #374151;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+        
+        .info-panel ul {
+            color: #6b7280;
+            line-height: 1.6;
+        }
+        
+        .info-panel li {
+            margin-bottom: 8px;
+        }
+        
+        .installation-steps {
+            background: #f3f4f6;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        
+        .installation-steps ol {
+            margin: 0;
+            padding-left: 20px;
+        }
+        
+        .installation-steps li {
+            margin-bottom: 10px;
+            color: #374151;
+        }
+        
+        .highlight {
+            background: linear-gradient(45deg, #4f46e5, #7c3aed);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 600;
+        }
+        
+        .badge {
+            display: inline-block;
+            background: linear-gradient(45deg, #4f46e5, #7c3aed);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-right: 8px;
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="demo-container">
+        <div class="popup-demo">
+            <iframe src="popup.html" width="350" height="450" frameborder="0"></iframe>
+        </div>
+        
+        <div class="info-panel">
+            <h1>🚀 Spark PPT Downloader</h1>
+            <p>A powerful Chrome extension that downloads presentations from Slideshare and Scribd as PDF or PPT files!</p>
+            
+            <h2>✨ Features</h2>
+            <ul>
+                <li><span class="badge">PDF</span>Download as PDF with original quality</li>
+                <li><span class="badge">PPT</span>Save as PowerPoint presentation</li>
+                <li><span class="badge">Auto</span>Automatically detects presentation pages</li>
+                <li><span class="badge">Fast</span>One-click download process</li>
+                <li><span class="badge">Modern</span>Beautiful glassmorphism UI</li>
+            </ul>
+            
+            <h2>📦 Installation</h2>
+            <div class="installation-steps">
+                <ol>
+                    <li>Open Chrome → <code>chrome://extensions/</code></li>
+                    <li>Enable <strong>"Developer mode"</strong></li>
+                    <li>Click <strong>"Load unpacked"</strong></li>
+                    <li>Select the <code>chrome-extension</code> folder</li>
+                    <li>Start downloading presentations!</li>
+                </ol>
+            </div>
+            
+            <h2>🎯 Supported Sites</h2>
+            <ul>
+                <li>✅ Slideshare.net</li>
+                <li>✅ Scribd.com</li>
+            </ul>
+            
+            <h2>👨‍💻 Credits</h2>
+            <p>Built by <span class="highlight">Owais Iqbal</span> x <span class="highlight">Deep Thinker</span></p>
+        </div>
+    </div>
+</body>
+</html>

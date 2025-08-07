@@ -1,0 +1,50 @@
+{
+  "manifest_version": 3,
+  "name": "Spark PPT Downloader",
+  "version": "1.0.0",
+  "description": "Download Slideshare and Scribd presentations as PDF or PPT with ease",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "downloads",
+    "storage"
+  ],
+  "host_permissions": [
+    "https://*.slideshare.net/*",
+    "https://*.scribd.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.slideshare.net/*",
+        "https://*.scribd.com/*"
+      ],
+      "js": ["libs/html2canvas.min.js", "libs/jspdf.min.js", "libs/pptxgen.min.js", "content.js"],
+      "css": ["content.css"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["libs/*"],
+      "matches": ["https://*.slideshare.net/*", "https://*.scribd.com/*"]
+    }
+  ]
+}
